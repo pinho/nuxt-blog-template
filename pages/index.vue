@@ -32,6 +32,11 @@
         >
           Follow author on Twitter
         </a>
+        <nuxt-link to="/blog/steps">
+          <p class="button--grey">
+            Example of article
+          </p>
+        </nuxt-link>
       </div>
     </div>
   </div>

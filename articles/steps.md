@@ -1,4 +1,10 @@
-# Steps to create 
+---
+slug: steps
+title: Creating this repo template
+author: Ronaldd Pinho
+---
+
+# Creating this repo template
 
 > Passo a passo do processo de criação desse template
 
@@ -73,7 +79,7 @@ elementos e estilo) das páginas de posts.
 ```
 
 O código adicionado aqui é simples:
-```vue
+```html
 <template>
   <div id="articleContainer">
     <nuxt/>
@@ -85,8 +91,17 @@ export default {
   layout: 'article'
 }
 </script>
+
+<style>
+/* Use a linguagem da sua preferência para estilos do template */
+</style>
 ```
 
 Adicionar o código dos arquivos vue no diretório `pages/blog`.
 
+## Links
 
+Siga-me nas mídias sociais:
+
+* @ronalddpinho on [Twitter](https://twitter.com/ronalddpinho)
+* @pinho on [Github](https://github.com/pinho)

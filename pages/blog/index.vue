@@ -4,7 +4,7 @@
     <ul>
       <li v-for="post in posts" :key="post.attributes.title">
         <nuxt-link v-bind:to="getPermalink(post)">
-          {{ post.attributes.title }}
+          {{ post.attributes.slug }}
         </nuxt-link>
       </li>
     </ul>
@@ -31,7 +31,6 @@ export default {
   methods: {
     getPermalink(post) {
         return `/blog/${post.attributes.slug}`;
-        // return  `${this.prefix}/${post.meta.resourcePath.split('\\').pop().split('/').pop().split('.')[0]}`;
     }
   }
 };
