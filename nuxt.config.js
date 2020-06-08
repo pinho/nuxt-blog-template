@@ -1,3 +1,5 @@
+import path from 'path';
+import FMMode from 'frontmatter-markdown-loader/mode';
 
 export default {
   mode: 'spa',
@@ -20,26 +22,6 @@ export default {
   */
   loading: { color: '#fff' },
   /*
-  ** Global CSS
-  */
-  css: [
-  ],
-  /*
-  ** Plugins to load before mounting the App
-  */
-  plugins: [
-  ],
-  /*
-  ** Nuxt.js dev-modules
-  */
-  buildModules: [
-  ],
-  /*
-  ** Nuxt.js modules
-  */
-  modules: [
-  ],
-  /*
   ** Build configuration
   */
   build: {
@@ -47,6 +29,17 @@ export default {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
+      config.module.rules.push({
+        test: /\.md$/,
+        loader: 'frontmatter-markdown-loader',
+        include: path.resolve(__dirname, "articles"),
+        options: {
+          mode: [ FMMode.VUE_COMPONENT, FMMode.META ],
+          vue: {
+            root: 'markdown-body'
+          }
+        }
+      });
     }
   }
 }
