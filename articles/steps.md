@@ -41,9 +41,28 @@ import FMMode from 'frontmatter-markdown-loader/mode';
 Em caso de dúvidas veja o arquivo completo no diretório do projeto.
 
 Crie o diretório `articles`, nome definido no campo "include" da regra
-adicionada ao `nuxt.config.js`
+adicionada ao `nuxt.config.js`, esse diretório será usado para armazenar os 
+arquivos markdown referentes às postagens. Crie um arquivo markdown para teste
+dentro desse diretório.
+
 ```zsh
 % mkdir articles
+% echo "Hello, World" > articles/hello.md
 ```
 
+No diretório `pages` crie um subdiretório com o nome que deseja para a rota dos
+posts, nesse caso, criei diretório chamado `./pages/blog` dessa forma o link
+para as postagens fica `http://yoursite/blog/post-name`.
+
+```zsh
+% mkdir pages/blog
+```
+
+Nesse diretório é criado um arquivo `index.vue` que define a página inicial do
+blog que lista todos os posts, e um arquivo `_slug.vue` que define uma página
+que será usada como template para todos os posts em `./articles`.
+
+```zsh
+% touch pages/blog/{index,_slug}.vue
+```
 
