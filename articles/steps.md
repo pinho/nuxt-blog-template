@@ -66,3 +66,27 @@ que será usada como template para todos os posts em `./articles`.
 % touch pages/blog/{index,_slug}.vue
 ```
 
+Criar o layout de um artigo em `./layouts/`, esse arquivo definirá o modelo (
+elementos e estilo) das páginas de posts.
+```zsh
+% touch layouts/article.vue
+```
+
+O código adicionado aqui é simples:
+```vue
+<template>
+  <div id="articleContainer">
+    <nuxt/>
+  </div>
+</template>
+
+<script>
+export default {
+  layout: 'article'
+}
+</script>
+```
+
+Adicionar o código dos arquivos vue no diretório `pages/blog`.
+
+
