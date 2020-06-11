@@ -6,21 +6,21 @@ author: Ronaldd Pinho
 
 # Creating this repo template
 
-> Passo a passo do processo de criação desse template
+> Step-by-step to create of this template repository
 
-O diretório foi criado usando o yarn, com o comando:
+The project was created using the following `yarn` command:
+
 ```zsh
 % yarn create nuxt-app nuxt-blog-template
 ```
 
-Após criar o projeto Nuxt, adicione o pacote `frontmatter-markdown-loader` como
-dependência.
+After create the Nuxt project, add the package `frontmatter-markdown-loader` as dependencie
 ```zsh
 % yarn add frontmatter-markdown-loader
 ```
 
-Adicione o frontmatter-markdown-loader nas configurações do Nuxt.
-No arquivo `nuxt.config.js`, adicione o seguinte código no campo build:
+Add the `frontmatter-markdown-loader` on configurations, in `nuxt.config.js`, 
+add the following code on `build` field:
 
 ```js
 extend (config, ctx) {
@@ -37,48 +37,47 @@ extend (config, ctx) {
   });
 }
 ```
-Não esquecendo de importar os módulos necessários
+Don't forget import the needed modules:
 
 ```js
 import path from 'path';
 import FMMode from 'frontmatter-markdown-loader/mode';
 ```
 
-Em caso de dúvidas veja o arquivo completo no diretório do projeto.
+In case of doubts, see the complete file on repository dir. tree.
 
-Crie o diretório `articles`, nome definido no campo "include" da regra
-adicionada ao `nuxt.config.js`, esse diretório será usado para armazenar os 
-arquivos markdown referentes às postagens. Crie um arquivo markdown para teste
-dentro desse diretório.
+Create the `articles` directory, this name was defines on the "include" field
+in rule added to `nuxt.config.js`, this directory will be used to store all
+markdown files referent to posts. Create a markdown file to tests into this folder.
 
 ```zsh
 % mkdir articles
 % echo "Hello, World" > articles/hello.md
 ```
 
-No diretório `pages` crie um subdiretório com o nome que deseja para a rota dos
-posts, nesse caso, criei diretório chamado `./pages/blog` dessa forma o link
-para as postagens fica `http://yoursite/blog/post-name`.
+In the `pages` directory, create a subdirectory with the name desired to the route
+to posts, in this case, I created a directory called `pages/blog`, so, the links
+to posts are link this: `http://yoursite/blog/post-name`.
 
 ```zsh
 % mkdir pages/blog
 ```
 
-Nesse diretório é criado um arquivo `index.vue` que define a página inicial do
-blog que lista todos os posts, e um arquivo `_slug.vue` que define uma página
-que será usada como template para todos os posts em `./articles`.
+In this directory was created a file `index.vue` which defines the main blog
+page where the posts all listed and, a file `_slug.vue` which serve as
+wrapper to the files of content in `articles` folder.
 
 ```zsh
 % touch pages/blog/{index,_slug}.vue
 ```
 
-Criar o layout de um artigo em `./layouts/`, esse arquivo definirá o modelo (
-elementos e estilo) das páginas de posts.
+Create a layout for post pages in `./layouts/` directory, this file defines the
+template (html elements and css style) of the post pages.
 ```zsh
 % touch layouts/article.vue
 ```
 
-O código adicionado aqui é simples:
+The code added here is simple:
 ```html
 <template>
   <div id="articleContainer">
@@ -93,15 +92,16 @@ export default {
 </script>
 
 <style>
-/* Use a linguagem da sua preferência para estilos do template */
+/* Use your prefered language for styles */
 </style>
 ```
 
-Adicionar o código dos arquivos vue no diretório `pages/blog`.
+Add the code of Vue files in the directory `pages/blog`.
+Add content (posts) using markdown files in the directory `articles`.
 
 ## Links
 
-Siga-me nas mídias sociais:
+Follow-me on social networks:
 
 * @ronalddpinho on [Twitter](https://twitter.com/ronalddpinho)
 * @pinho on [Github](https://github.com/pinho)
