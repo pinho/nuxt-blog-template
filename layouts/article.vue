@@ -20,6 +20,7 @@ export default {
 }
 .markdown-body {
   font-family: 'Quicksand', 'Fira Sans', Arial, sans-serif;
+  font-size: 11pt;
 }
 .markdown-body > h1 {
   text-align: center;
@@ -44,27 +45,29 @@ export default {
   color: orangered;
 }
 .markdown-body blockquote {
-  background-color: #ddd;
+  background-color: #efefef;
+  font-family: 'Times New Roman', serif;
   font-style: italic;
-  padding: 1.1rem 2rem;
-  border-left: 20px solid #3b8070;
+  font-size: 13pt;
+  padding: 30px 48px;
+  border-left: 10px solid #108775;
   box-sizing: content-box;
 }
 .markdown-body code {
   box-sizing: border-box;
   font-family: 'Fira Code', 'Source Code Pro', monospace, sans-serif;
-  font-size: 12pt;
   color: #3b8070;
 }
 .markdown-body > pre {
   width: 100%;
-  background-color: #1b3220;
+  background-color: #eeefef;
   color: lightgreen;
   padding: 1rem;
-  border-radius: .3rem;
-  overflow-x: scroll;
+  border-radius: 4px;
+  /* overflow-x: scroll; */
 }
 .markdown-body > pre > code {
-  color: whitesmoke;
+  color: darkslategray;
+  font-size: 10pt;
 }
 </style>
