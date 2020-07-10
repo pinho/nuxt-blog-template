@@ -19,7 +19,7 @@ export default {
   padding: 48px 5rem;
 }
 .markdown-body {
-  font-family: 'Quicksand', 'Fira Sans', Arial, sans-serif;
+  font-family:  Arial, sans-serif;
   font-size: 11pt;
 }
 .markdown-body > h1 {
@@ -28,8 +28,12 @@ export default {
   font-weight: 600;
   padding-block: 2rem;
 }
+.markdown-body > h2 {
+  margin-block: 36px 10px;
+}
 .markdown-body > h2::before {
   content: '## ';
+  color: #00C58E;
 }
 .markdown-body > p {
   text-align: justify;
@@ -42,20 +46,22 @@ export default {
   color: grey;
 }
 .markdown-body a:hover {
-  color: orangered;
+  color: #108775;
 }
 .markdown-body blockquote {
-  background-color: #efefef;
+  background-color: #fff;
   font-family: 'Times New Roman', serif;
   font-style: italic;
   font-size: 13pt;
-  padding: 30px 48px;
-  border-left: 10px solid #108775;
+  padding: 26px 48px;
+  border-left: 6px solid #2F495E;
+  color: #2F495E;
   box-sizing: content-box;
 }
 .markdown-body code {
   box-sizing: border-box;
-  font-family: 'Fira Code', 'Source Code Pro', monospace, sans-serif;
+  font-family: monospace;
+  font-size: .9em;
   color: #3b8070;
 }
 .markdown-body > pre {

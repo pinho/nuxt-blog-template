@@ -4,9 +4,11 @@ title: Creating this repo template
 author: Ronaldd Pinho
 ---
 
-# Creating this repo template
+# How to this project was created
 
 > Step-by-step to create of this template repository
+
+## Init the project
 
 The project was created using the following `yarn` command:
 
@@ -18,6 +20,8 @@ After create the Nuxt project, add the package `frontmatter-markdown-loader` as 
 ```zsh
 % yarn add frontmatter-markdown-loader
 ```
+
+## Configure markdown loader and directory for the posts
 
 Add the `frontmatter-markdown-loader` on configurations, in `nuxt.config.js`, 
 add the following code on `build` field:
@@ -46,6 +50,8 @@ import FMMode from 'frontmatter-markdown-loader/mode';
 
 In case of doubts, see the complete file on repository dir. tree.
 
+### Articles directory
+
 Create the `articles` directory, this name was defines on the "include" field
 in rule added to `nuxt.config.js`, this directory will be used to store all
 markdown files referent to posts. Create a markdown file to tests into this folder.
@@ -54,6 +60,8 @@ markdown files referent to posts. Create a markdown file to tests into this fold
 % mkdir articles
 % echo "Hello, World" > articles/hello.md
 ```
+
+## Pages and Layouts
 
 In the `pages` directory, create a subdirectory with the name desired to the route
 to posts, in this case, I created a directory called `pages/blog`, so, the links
