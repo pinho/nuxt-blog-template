@@ -12,28 +12,19 @@
         <a
           href="https://nuxtjs.org/"
           target="_blank"
-          class="button--green"
+          class="button--vue-color-1"
         >
           Nuxt Documentation
         </a>
         <a
           href="https://github.com/pinho/nuxt-blog-template"
           target="_blank"
-          class="button--grey"
+          class="button--vue-color-2"
         >
-          GitHub of Template
-        </a>
-      </div>
-      <div class="links">
-        <a
-          href="https://twitter.com/ronalddpinho"
-          target="_blank"
-          class="button--blue"
-        >
-          Follow author on Twitter
+          Template Repository
         </a>
         <nuxt-link to="/blog/steps">
-          <p class="button--grey">
+          <p class="button--vue-color-3">
             Example of article
           </p>
         </nuxt-link>
@@ -67,20 +58,23 @@ export default {
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: block;
   font-weight: 300;
-  font-size: 100px;
+  font-size: 80px;
   color: #35495e;
   letter-spacing: 1px;
 }
 
 .subtitle {
   font-weight: 300;
-  font-size: 42px;
+  font-size: 32px;
   color: #526488;
   word-spacing: 5px;
   padding-bottom: 15px;
 }
 
 .links {
-  padding-top: 15px;
+  display: flex;
+  padding: 15px;
+  width: 100%;
+  justify-content: space-between;
 }
 </style>

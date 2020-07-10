@@ -24,47 +24,47 @@ html {
   margin: 0;
 }
 
-.button--green {
+.button--vue-color-1 {
   display: inline-block;
   border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
+  border: 1px solid #00C58E;
+  color: #00C58E;
   text-decoration: none;
   padding: 10px 30px;
 }
 
-.button--green:hover {
+.button--vue-color-1:hover {
   color: #fff;
-  background-color: #3b8070;
+  background-color: #00C58E;
 }
 
-.button--grey {
+.button--vue-color-2 {
   display: inline-block;
   border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
-}
-
-.button--blue {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #1da1f2;
-  color: #1da1f2;
+  border: 1px solid #2F495E;
+  color: #2F495E;
   text-decoration: none;
   padding: 10px 30px;
   margin-left: 15px;
 }
 
-.button--blue:hover {
+.button--vue-color-2:hover {
   color: #fff;
-  background-color: #1da1f2;
+  background-color: #2F495E;
+}
+
+.button--vue-color-3 {
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #108775;
+  color: #108775;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin-left: 15px;
+}
+
+.button--vue-color-3:hover {
+  color: #fff;
+  background-color: #108775;
 }
 </style>
