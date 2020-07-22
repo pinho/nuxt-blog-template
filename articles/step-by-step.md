@@ -1,10 +1,13 @@
 ---
-slug: steps
-title: Creating this repo template
-author: Ronaldd Pinho
+slug: step-by-step
+title: Step by step for the creation of this repository template
+author: R. Pinho
+brief: "
+This post explains all the steps to create a blog in Nuxt using a markdown loader
+"
 ---
 
-# How to this project was created
+# Step by step for the creation of this repository template 
 
 > Step-by-step to create of this template repository
 

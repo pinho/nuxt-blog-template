@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <navbar />
     <div>
       <logo />
       <h1 class="title">
@@ -8,37 +9,18 @@
       <h2 class="subtitle">
         A template for blog project in Nuxt.js and Markdown
       </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--vue-color-1"
-        >
-          Nuxt Documentation
-        </a>
-        <a
-          href="https://github.com/pinho/nuxt-blog-template"
-          target="_blank"
-          class="button--vue-color-2"
-        >
-          Template Repository
-        </a>
-        <nuxt-link to="/blog/steps">
-          <p class="button--vue-color-3">
-            Example of article
-          </p>
-        </nuxt-link>
-      </div>
     </div>
   </div>
 </template>
 
 <script>
 import Logo from '~/components/Logo.vue'
+import Navbar from '~/components/Navbar.vue'
 
 export default {
   components: {
-    Logo
+    Logo,
+    Navbar
   }
 }
 </script>
@@ -48,6 +30,7 @@ export default {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -58,9 +41,11 @@ export default {
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   display: block;
   font-weight: 300;
-  font-size: 80px;
+  font-size: 70px;
   color: #35495e;
   letter-spacing: 1px;
+  padding: 0;
+  margin-bottom: .3em;
 }
 
 .subtitle {
@@ -68,7 +53,7 @@ export default {
   font-size: 32px;
   color: #526488;
   word-spacing: 5px;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
 }
 
 .links {

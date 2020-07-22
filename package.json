@@ -11,8 +11,8 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "frontmatter-markdown-loader": "^3.5.0",
-    "nuxt": "^2.0.0"
+    "frontmatter-markdown-loader": "^3.6.0",
+    "nuxt": "^2.13.3"
   },
   "devDependencies": {}
 }
